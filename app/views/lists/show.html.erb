@@ -1,0 +1,26 @@
+<h1>Show.html</h1>
+<h2><%= @list.name %></h2>
+<%# <p><%=@list.address %>
+<div class="col-8">
+      <% if @bookmark.any? %>
+        <div class="container">
+          <div class="row">
+
+            <% @bookmark.each do |bookmark| %>
+              <div class="col-4 mb-3">
+                  <div class="card-trip">
+                    <div class="card-trip-infos">
+                      <div>
+                        <h2><%= bookmark.comment %></h2>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      <% else %>
+        <h2>No Bookmarks here yet, add some!</h2>
+      <% end %>
+    </div>
+<%= link_to "Add a Movie", new_list_bookmark_path(@list) %>
