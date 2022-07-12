@@ -4,3 +4,17 @@
 body {
   background-color: #F4E4BA;
 }
+
+.m-5 {
+
+  margin: 3rem!important;
+  background-image: url("https://i.ytimg.com/vi/ifVEMkQ9BaY/maxresdefault.jpg");
+  background-size: cover;
+  height: 100px;
+  color: white;
+  padding: 20px;
+}
+
+.movie-img {
+  background-size: contain;
+}
