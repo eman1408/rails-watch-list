@@ -35,4 +35,3 @@
 yarn-debug.log*
 .yarn-integrity
 .env*
-CLOUDINARY_URL=cloudinary://852279122284283:7RPLYSJ596acBTcrgSQy_H7a_ko@dzur1urzk

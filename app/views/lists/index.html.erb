@@ -24,6 +24,11 @@
     <% @lists.each do |list| %>
       <div class="col-4 mb-3">
         <%= link_to list_path(list) do %>
+        <% if list.photo.attached? %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path list.photo.key, height: 300, crop: :fill %>')">
+            <h2><%= list.name %></h2>
+          </div>
+        <% else %>
           <div class="card-trip">
             <div class="card-trip-infos">
               <div>
@@ -31,6 +36,7 @@
               </div>
             </div>
           </div>
+          <% end %>
         <% end %>
       </div>
     <% end %>
