@@ -6,6 +6,8 @@
         <%= simple_form_for(@list) do |f| %>
           <%= f.input :name, placeholder: 'Genre' %>
           <%= f.submit class: 'btn btn-flat' %>
+          <%= f.input :photo, as: :file %>
+          <%= link_to "Cancel", lists_path, class: "btn btn-flat" %>
         <% end %>
       </div>
     </div>
